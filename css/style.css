@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap'); */
 html{
     scroll-behavior: smooth;
     font-family: 'Jost', sans-serif;
@@ -28,7 +28,7 @@ html{
     border-top: white 1px solid;
     border-bottom: white 1px solid;
     padding: 5px 0px;
-    font-size: 50px;
+    font-size: 35px;
     transition: all 0.3s linear;
 }
 .center div:hover{
@@ -161,7 +161,7 @@ button:hover{
 }
 /*  */
 .about{
-    height: 600px;
+    height: 800px;
     width: 100%;
     background-color: #0392cf;
     display: flex;
@@ -178,7 +178,7 @@ button:hover{
     background-size: cover;
 }
 .about-sec{
-   margin-top: 30px;
+   margin-top: 50px;
 }
 .about-me{
     color: white;
@@ -221,7 +221,7 @@ button:hover{
     width: 50px;
     background-color:#0392cf;
     bottom: -25px;
-    right: 50%;
+    right: 45%;
     transform: rotateZ(45deg);
 }
 /*  */
@@ -253,7 +253,7 @@ button:hover{
     width: 50px;
     background-color:white;
     bottom: -25px;
-    right: 50%;
+    right: 45%;
     transform: rotateZ(45deg);
 }
 /*  */
@@ -357,10 +357,19 @@ button:hover{
 .slide_btn:hover .top-icon{
     color: #0392cf;
 }
-@media(max-width:1000px){
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+@media(max-width:500px){
     .center div{
-        font-size: 33px;
-    }  
+        font-size: 20px;
+    }
+}
+@media(max-width:1000px){
+    .flex{
+        flex-direction: column;
+    }
     .c1 button{
         font-size: 25px;
     }
